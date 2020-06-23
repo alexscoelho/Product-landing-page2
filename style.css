@@ -1,0 +1,91 @@
+/*resets*/
+body{
+    font-family: monospace
+}
+ul li { list-style: none}
+ul {
+    padding: 0;
+    margin: 0
+}
+
+
+
+/*beheaviours*/
+a { color:black;text-decoration: none} a:visited{color:black}
+button {
+    background: black;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    
+}
+.p-1 {
+    padding: 10px
+}
+
+.img {
+    background-size: cover;
+    background-repeat:no-repeat;
+    min-height: 10px;
+    min-width: 10px
+}
+
+.layout {
+    display: flex;
+    justify-content: flex-end
+}
+.layout ul li { margin-left: 10px}
+.layout.layout-left li { margin-right: 10px}
+.layout.horizontal{
+    flex-direction: row;
+}
+.layout.horizontal .img{
+    flex-grow: 1;
+    margin-top: 10px
+}
+.layout.horizontal .img:first-child{
+    
+    margin-left: 0
+}
+.layout.layout-left { justify-content: flex-start;}
+
+.w-50 {
+    width: 50%
+}
+
+/*specific*/
+.gallery .img {
+    height: 120px;
+}
+.main-img {
+    height: 300px !important;
+}
+
+.navbar{
+    
+    border-bottom: 1px #bdbdbd solid;
+}
+.logo{
+    
+    flex-grow: 1
+}
+.menu{
+    
+     flex-grow: 2
+}
+.breadcrum {
+    text-transform: uppercase 
+}
+.price {
+    font-size: 20px
+}
+.description {
+    border-top: 1px solid #bdbdbdbd;
+    margin-top:10px
+}
